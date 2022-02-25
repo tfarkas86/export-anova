@@ -1,0 +1,11 @@
+---
+output: pdf_document
+---
+
+```{r, echo = FALSE}
+library(knitr)
+df <- head(iris)
+kable(x = df, 
+      format = "latex")
+```
+

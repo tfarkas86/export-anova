@@ -55,7 +55,7 @@ export_anova <- function(model, file = NULL, pnames = NULL, alpha = 0.05,
   
   if(!is.null(file)) {
     file.create(file)
-    kableExtra::as_image(x = latex_out, file = file, error = FALSE)
+    kableExtra::save_kable(x = latex_out, file = file)
     }
   else return(latex_out)
 

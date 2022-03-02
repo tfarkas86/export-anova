@@ -54,9 +54,10 @@ export_anova <- function(model, file = NULL, pnames = NULL, alpha = 0.05,
     add_footnote(notation = "symbol", ...)
   
   if(!is.null(file)) {
-    file.create(file)
-    kableExtra::save_kable(x = latex_out, file = file)
+#    file.create(file)
+    kableExtra::save_kable(x = latex_out, file = file
+#   , error = TRUE
+    )
     }
   else return(latex_out)
-
 }

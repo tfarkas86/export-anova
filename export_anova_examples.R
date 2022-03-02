@@ -1,5 +1,5 @@
 library(here)
-here()
+
 # source the export_anova.R script to get function in environment
 source(here("export_anova.R"))
 # source("~/Dropbox/1_Work/1_Research/Rob Clark/export-anova/export_anova.R")
@@ -13,7 +13,6 @@ renames <- data.frame(old = c("Sepal.Width", "Petal.Length"),
 
 # a place to put the table
 file = here("test_table.pdf")
-# file = "~/Dropbox/1_Work/1_Research/Rob Clark/export-anova/test_table.pdf"
 
 export_anova(mod = mod, file = file, pnames = renames)
 

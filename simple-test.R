@@ -1,7 +1,6 @@
 library(knitr)
 library(here)
 library(kableExtra)
-library(tinytex)
 
 outfile <- here("test.pdf")
 table <- head(iris)
